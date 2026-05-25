@@ -1,220 +1,52 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Anubhav Paudel — Fullstack Developer</title>
-    <meta
-      name="description"
-      content="Minimalist portfolio for a fullstack developer specializing in Next.js and React."
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina LMS · Course Catalog</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand">
-          <span class="brand-mark">RC</span>
-          <div class="brand-text">
-            <span class="name">Anubhav Paudel</span>
-            <span class="role">Fullstack Developer</span>
-          </div>
-        </div>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a class="logo" href="index.html">Lumina LMS</a>
+        <nav class="nav" id="main-nav"></nav>
+        <div class="auth-actions" id="auth-actions"></div>
       </div>
     </header>
 
-    <main id="main">
-      <section class="hero container" aria-label="Introduction">
-        <div class="hero-content">
-          <p class="eyebrow">Next.js • React • Node.js</p>
-          <h1>Building fast, accessible web apps with a product mindset.</h1>
-          <p class="lead">
-            I’m a fullstack developer focused on building scalable, delightful
-            digital products. I specialize in modern React/Next.js frontends and
-            robust backend systems.
-          </p>
-          <div class="cta-row">
-            <a class="button" href="#projects">View Projects</a>
-            <a class="button ghost" href="#contact">Let’s Talk</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="stat">
-            <span class="stat-value">5+ years</span>
-            <span class="stat-label">Fullstack experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">20+ launches</span>
-            <span class="stat-label">Shipped products</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">Remote</span>
-            <span class="stat-label">Based in Kathmandu, Nepal</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section container">
-        <div class="section-header">
-          <h2>About</h2>
-          <p>
-            I help teams move fast without sacrificing quality. My approach blends
-            design sensitivity, performance tuning, and API craftsmanship to
-            deliver maintainable products.
-          </p>
-        </div>
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>What I do</h3>
-            <ul>
-              <li>Design and build Next.js apps end-to-end</li>
-              <li>Develop APIs with Node.js, PostgreSQL, and Prisma</li>
-              <li>Own deployment pipelines and monitoring</li>
-            </ul>
-          </div>
-          <div class="about-card">
-            <h3>How I work</h3>
-            <ul>
-              <li>Lean, iterative delivery with measurable outcomes</li>
-              <li>Accessibility-first and performance-focused</li>
-              <li>Clean code and thoughtful architecture</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section container">
-        <div class="section-header">
-          <h2>Skills</h2>
-          <p>Modern fullstack toolkit with a focus on reliability.</p>
-        </div>
-        <div class="pill-grid">
-          <span class="pill">Next.js</span>
-          <span class="pill">React</span>
-          <span class="pill">TypeScript</span>
-          <span class="pill">Node.js</span>
-          <span class="pill">PostgreSQL</span>
-          <span class="pill">Prisma</span>
-          <span class="pill">REST & GraphQL</span>
-          <span class="pill">Vercel</span>
-          <span class="pill">Docker</span>
-          <span class="pill">Jest</span>
-          <span class="pill">Playwright</span>
-        </div>
-      </section>
-
-      <section id="projects" class="section container">
-        <div class="section-header">
-          <h2>Projects</h2>
-          <p>Selected work with impact and measurable results.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-meta">SaaS Platform</div>
-            <h3>Metrics Hub</h3>
-            <p>
-              Real-time analytics dashboard for growth teams with custom
-              reporting, role-based access, and Stripe billing.
+    <main>
+      <div class="container">
+        <section class="hero minimal-hero" id="hero-section">
+          <div class="stack">
+            <p class="hero-kicker">Welcome to Lumina LMS</p>
+            <h1 class="section-title">Learn quickly with focused, professional courses.</h1>
+            <p class="subtle line-clamp-2">
+              Short video units, automatic progress tracking, and free enrollment.
             </p>
-            <div class="card-tags">
-              <span>Next.js</span>
-              <span>React</span>
-              <span>PostgreSQL</span>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-meta">E-commerce</div>
-            <h3>Field & Supply</h3>
-            <p>
-              Headless storefront with lightning-fast catalog pages and a
-              personalized checkout flow.
-            </p>
-            <div class="card-tags">
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>Vercel</span>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-meta">Internal Tools</div>
-            <h3>Ops Console</h3>
-            <p>
-              Unified admin suite for support and operations with audit trails and
-              automated workflows.
-            </p>
-            <div class="card-tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Prisma</span>
-            </div>
-          </article>
-        </div>
-      </section>
+            <div class="card-actions" id="hero-actions"></div>
+            <div class="hero-stats" id="hero-stats"></div>
+          </div>
+        </section>
 
-      <section id="experience" class="section container">
-        <div class="section-header">
-          <h2>Experience</h2>
-          <p>Recent roles focused on fullstack delivery and leadership.</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>Senior Fullstack Developer</h3>
-              <span>Northwind Labs • 2022 — Present</span>
-            </div>
-            <p>
-              Led a Next.js migration, improving performance by 42% and reducing
-              build times by 35%.
-            </p>
+        <section class="section section-card">
+          <div class="section-header">
+            <h2 class="section-title">Course catalog</h2>
+            <span class="subtle" id="course-count"></span>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>Fullstack Developer</h3>
-              <span>Studio Maple • 2019 — 2022</span>
-            </div>
-            <p>
-              Built reusable design systems and APIs, enabling a 3x faster
-              delivery cadence across teams.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section container">
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>Open to freelance and full-time opportunities.</p>
-        </div>
-        <div class="contact-card">
-          <div>
-            <h3>Let’s build something great.</h3>
-            <p>Email me or connect on GitHub and LinkedIn.</p>
-          </div>
-          <div class="contact-actions">
-            <a class="button" href="mailto:hello@rileychen.dev">hello@rileychen.dev</a>
-            <div class="link-row">
-              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </section>
+          <div class="grid" id="course-grid"></div>
+          <div id="course-empty"></div>
+        </section>
+      </div>
     </main>
 
-    <footer class="footer container">
-      <span>© <span id="year"></span> Anubhav Paudel</span>
-      <span>Built with HTML, CSS, and JavaScript</span>
+    <footer class="footer">
+      <div class="container">Lumina LMS · Free, professional learning for modern teams.</div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/catalog.js"></script>
   </body>
 </html>

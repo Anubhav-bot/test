@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina LMS · Log in</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Lumina LMS</a>
+        <nav class="nav" id="main-nav"></nav>
+        <div class="auth-actions" id="auth-actions"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="page-message"></div>
+        <section class="hero">
+          <div>
+            <p class="badge">Mock authentication</p>
+            <h1 class="section-title">Welcome back</h1>
+            <p class="subtle">Use the demo accounts below to access the platform.</p>
+            <div class="notice">
+              <strong>Admin:</strong> admin@gmail.com · password<br />
+              <strong>User:</strong> user@gmail.com · password
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2 class="section-title">Log in</h2>
+            <form class="form" id="login-form">
+              <input name="email" type="email" placeholder="Email" required />
+              <input
+                name="password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <button class="button" type="submit">Sign in</button>
+              <p class="subtle" id="login-error"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Secure access is coming soon.</div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

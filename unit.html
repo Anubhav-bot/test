@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina LMS · Unit Player</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Lumina LMS</a>
+        <nav class="nav" id="main-nav"></nav>
+        <div class="auth-actions" id="auth-actions"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="page-message"></div>
+        <section class="hero" id="unit-hero"></section>
+
+        <section class="hero">
+          <div>
+            <div class="player-frame">
+              <div id="player"></div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2 class="section-title">Progress</h2>
+            <p class="subtle" id="unit-progress-text">Tracking not started</p>
+            <div class="progress-bar" aria-hidden="true">
+              <span id="unit-progress-bar"></span>
+            </div>
+            <div id="unit-status" style="margin-top: 12px;"></div>
+          </div>
+        </section>
+
+        <section class="section section-card">
+          <div class="section-header">
+            <h2 class="section-title">Course units</h2>
+            <a class="button secondary" id="back-to-course" href="#">Back to course</a>
+          </div>
+          <div class="list" id="unit-siblings"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Stay consistent and finish what you started.</div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/unit.js"></script>
+  </body>
+</html>
